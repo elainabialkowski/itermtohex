@@ -31,15 +31,15 @@ func main() {
 				switch k {
 				case "Red Component":
 					red = int(real * 255)
-				case "Blue Component":
-					green = int(real * 255)
 				case "Green Component":
+					green = int(real * 255)
+				case "Blue Component":
 					blue = int(real * 255)
 				}
 			}
 		}
 
-		hex = fmt.Sprintf("#%x%x%x", red, green, blue)
+		hex = fmt.Sprintf("#%02x%02x%02x", red, green, blue)
 		fmt.Printf("%s: %s\n", k, hex)
 	}
 
